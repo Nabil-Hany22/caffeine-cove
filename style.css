@@ -1,0 +1,74 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+/* css variables */
+:root{
+    --bg-color:#f1f1f1;
+    --bg-secondary:#fbfbfb;
+    --color-dark-gray:#333;
+    --color-light-brown:#c7a17a;
+    --color-black:#1f2226;
+}
+
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--bg-secondary);
+}
+
+h1,h2,h3{
+    font-family: "Oswald", sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Header start */
+#header{
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+#header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    height: 90px;
+}
+
+#header .navbar .logo{
+    width: 300px;
+}
+
+#header .navbar ul{
+    display: flex;
+}
+
+#header .navbar ul li a{
+    color: var(--color-dark-gray);
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 500px;
+    transition: all 0.3s ease;
+}
+
+#header .navbar ul li a:hover{
+    color: var(--color-light-brown);
+}
+/* Header End */
